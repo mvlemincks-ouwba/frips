@@ -3,133 +3,130 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#ffc400">
-<title>FRIPS — Chips en forme de frite (3D)</title>
-<meta name="description" content="FRIPS : chips en forme de frite pour l'apéro. Paquets en 3D, 100% mobile.">
-<meta property="og:title" content="FRIPS — Les chips en forme de frite pour l'apéro">
+<meta name="theme-color" content="#111">
+<title>FRIPS — chips en forme de frite</title>
+<meta name="description" content="FRIPS : les chips en forme de frite pour l'apéro. Précommande ouverte.">
+<meta property="og:title" content="FRIPS — les chips en forme de frite">
 <meta property="og:description" content="Le cliché de l'apéro, croquant. Précommande ouverte.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://mvlemincks-ecosystem.github.io/frips/">
+<meta property="og:url" content="https://mvlemincks-ouwba.github.io/frips/">
 <meta name="twitter:card" content="summary_large_image">
 <style>
-  :root{--gold:#ffc400;--gold-d:#e0a800;--ink:#1a1305;--cream:#fff8e6;--red:#e23b2e}
+  :root{
+    --ink:#14110a; --paper:#faf7f0; --gold:#f5b400; --mut:rgba(20,17,10,.55);
+    --line:rgba(20,17,10,.12);
+  }
   *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--cream);color:var(--ink);line-height:1.5;-webkit-text-size-adjust:100%}
-  .wrap{max-width:480px;margin:0 auto;padding:0 20px}
-  header{background:var(--gold);padding:22px 0 16px;text-align:center;position:sticky;top:0;z-index:20;box-shadow:0 2px 8px rgba(0,0,0,.12)}
-  .logo{font-size:1.9rem;font-weight:900;letter-spacing:.06em}
-  .logo span{color:#fff;background:var(--ink);padding:0 6px;border-radius:6px}
-  .tag{font-size:.8rem;font-weight:600;opacity:.8;margin-top:3px}
-
-  /* ---- 3D VIDEOS ---- */
-  .stage{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;padding:20px 0 8px}
-  .packvid{width:140px;height:175px;border-radius:16px;box-shadow:0 10px 24px rgba(0,0,0,.18);background:#fff;object-fit:cover}
-  .hint{text-align:center;font-size:.78rem;opacity:.55;margin-bottom:8px}
-
-  h1{font-size:1.6rem;line-height:1.2;font-weight:900;text-align:center;padding:24px 0 6px}
-  .sub{text-align:center;font-size:1rem;opacity:.85;max-width:330px;margin:0 auto 18px}
-  .cta{display:inline-block;margin:18px auto 0;background:var(--ink);color:var(--gold);font-weight:800;padding:14px 28px;border-radius:999px;text-decoration:none;font-size:1.02rem;box-shadow:0 4px 0 var(--gold-d);display:block;text-align:center}
-  .cta:active{transform:translateY(2px);box-shadow:0 2px 0 var(--gold-d)}
-
-  section{padding:28px 0;border-top:2px dashed rgba(0,0,0,.1)}
-  h2{font-size:1.3rem;font-weight:900;margin-bottom:14px;text-align:center}
-  .feat{list-style:none;display:grid;gap:12px}
-  .feat li{background:#fff;border-radius:14px;padding:14px;font-weight:600;box-shadow:0 3px 10px rgba(0,0,0,.06);display:flex;align-items:center;gap:10px}
-  .feat li::before{content:"🍟";font-size:1.3rem}
-  .buy{text-align:center}
-  .buy a{display:block;background:var(--ink);color:var(--gold);text-decoration:none;font-weight:800;padding:16px;border-radius:14px;margin:10px 0;font-size:1.02rem}
-  .preco{display:grid;gap:10px;margin-bottom:6px}
-  .preco input,.preco select{width:100%;padding:14px;border:2px solid var(--gold);border-radius:12px;font-size:1rem;font-family:inherit;background:#fff;color:var(--ink)}
-  .preco button{width:100%;padding:16px;border:none;border-radius:12px;background:var(--ink);color:var(--gold);font-weight:800;font-size:1.05rem;box-shadow:0 4px 0 var(--gold-d);cursor:pointer}
-  .preco button:active{transform:translateY(2px);box-shadow:0 2px 0 var(--gold-d)}
-  footer{background:var(--ink);color:var(--cream);text-align:center;padding:24px 0;font-size:.85rem}
-  footer a{color:var(--gold)}
-  .note{font-size:.8rem;opacity:.6;text-align:center;margin-top:8px}
+  html{-webkit-text-size-adjust:100%}
+  body{background:var(--paper);color:var(--ink);font:16px/1.5 -apple-system,BlinkMacSystemFont,"Inter",Segoe UI,Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:460px;margin:0 auto;padding:0 22px}
+  /* header */
+  header{border-bottom:1px solid var(--line);padding:18px 0}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.4rem;letter-spacing:-.02em}
+  .brand .dot{width:30px;height:30px;border-radius:8px;background:var(--ink);display:grid;place-items:center;font-size:1rem}
+  /* hero */
+  .hero{padding:48px 0 8px}
+  .kicker{font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+  h1{font-size:2.4rem;line-height:1.02;font-weight:800;letter-spacing:-.03em}
+  h1 em{font-style:normal;color:var(--gold)}
+  .lede{margin-top:16px;font-size:1.05rem;color:var(--mut);max-width:34ch}
+  .cta{display:block;margin-top:26px;background:var(--ink);color:var(--paper);text-align:center;font-weight:700;padding:16px;border-radius:12px;text-decoration:none;font-size:1.02rem}
+  /* video strip */
+  .reel{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:36px 0 8px}
+  .reel video{width:100%;aspect-ratio:3/4;border-radius:14px;object-fit:cover;background:#eee;box-shadow:0 6px 18px rgba(0,0,0,.08)}
+  .reel figcaption{font-size:.72rem;color:var(--mut);text-align:center;margin-top:6px}
+  /* sections */
+  section{padding:40px 0;border-top:1px solid var(--line)}
+  h2{font-size:1.5rem;font-weight:800;letter-spacing:-.02em;margin-bottom:18px}
+  .grid{display:grid;gap:14px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px}
+  .card b{font-weight:700}
+  .card span{display:block;color:var(--mut);font-size:.9rem;margin-top:3px}
+  .story{font-size:1.05rem;line-height:1.6}
+  .story b{background:linear-gradient(transparent 60%,var(--gold) 60%)}
+  /* form */
+  form{display:grid;gap:10px;margin-top:6px}
+  input,select{width:100%;padding:14px 16px;border:1px solid var(--line);border-radius:12px;font:inherit;background:#fff;color:var(--ink)}
+  input:focus,select:focus{outline:2px solid var(--gold);outline-offset:0}
+  button{width:100%;padding:16px;border:none;border-radius:12px;background:var(--gold);color:var(--ink);font-weight:800;font-size:1.02rem;cursor:pointer}
+  .fine{font-size:.78rem;color:var(--mut);text-align:center;margin-top:8px}
+  .ig{display:block;margin-top:14px;text-align:center;font-weight:700;color:var(--ink);text-decoration:none}
+  footer{padding:32px 0;border-top:1px solid var(--line);font-size:.82rem;color:var(--mut);text-align:center}
+  footer a{color:var(--ink);text-decoration:none;font-weight:600}
 </style>
 </head>
 <body>
-<header>
-  <div class="logo">FRIPS<span>🍟</span></div>
-  <div class="tag">Le paquet qui se retourne dans la main</div>
-</header>
+<header><div class="wrap"><div class="brand"><span class="dot">🍟</span>FRIPS</div></div></header>
 
-<section class="wrap" style="border-top:none">
-  <h1>Des chips en forme de frite.<br>Le cliché de l'apéro, croquant.</h1>
-  <p class="sub">Ils tournent tout seuls. Tu regardes, tu craques. 🍟</p>
-  <div class="stage" id="stage">
-    <video class="packvid" autoplay loop muted playsinline preload="metadata" poster="">
-      <source src="3d/out/original.mp4" type="video/mp4">
-    </video>
-    <video class="packvid" autoplay loop muted playsinline preload="metadata">
-      <source src="3d/out/paprika.mp4" type="video/mp4">
-    </video>
-    <video class="packvid" autoplay loop muted playsinline preload="metadata">
-      <source src="3d/out/fromage.mp4" type="video/mp4">
-    </video>
-  </div>
-  <a class="cta" href="#commander">Je veux mes FRIPS</a>
-</section>
+<main class="wrap">
+  <section class="hero" style="border-top:none;padding-top:48px">
+    <div class="kicker">L'apéro en frite</div>
+    <h1>Des chips en forme de <em>frite.</em></h1>
+    <p class="lede">Le cliché de l'apéro, version croquante. Pomme de terre, forme frite, 150 g.</p>
+    <a class="cta" href="#preco">Précommander — 3,90 €</a>
 
-<section class="wrap">
-  <h2>Les goûts</h2>
-  <ul class="feat">
-    <li>Original Sel de mer — le classique qui marche</li>
-    <li>Paprika — l'apéro qui a du caractère</li>
-    <li>Fromage & oignon — le réconfort en forme de frite</li>
-  </ul>
-</section>
+    <div class="reel">
+      <figure><video autoplay loop muted playsinline preload="metadata"><source src="3d/out/original.mp4" type="video/mp4"></video><figcaption>Original</figcaption></figure>
+      <figure><video autoplay loop muted playsinline preload="metadata"><source src="3d/out/paprika.mp4" type="video/mp4"></video><figcaption>Paprika</figcaption></figure>
+      <figure><video autoplay loop muted playsinline preload="metadata"><source src="3d/out/fromage.mp4" type="video/mp4"></video><figcaption>Fromage</figcaption></figure>
+    </div>
+  </section>
 
-<section class="wrap">
-  <h2>Pourquoi tu craques</h2>
-  <ul class="feat">
-    <li>Forme frite — le premier sachet qui fait rire avant de l'ouvrir</li>
-    <li>Croustillant qui tient — pas de miettes dans la moquette</li>
-    <li>150 g, dose apéro parfaite</li>
-  </ul>
-</section>
+  <section>
+    <h2>Pourquoi</h2>
+    <div class="grid">
+      <div class="card"><b>La forme fait rire</b><span>Le premier sachet qui amuse avant de l'ouvrir.</span></div>
+      <div class="card"><b>Croustillant qui tient</b><span>Pas de miettes dans la moquette.</span></div>
+      <div class="card"><b>Dose apéro</b><span>150 g, la portion parfaite pour deux.</span></div>
+    </div>
+  </section>
 
-<section class="wrap">
-  <h2>L'histoire</h2>
-  <p style="text-align:center;font-weight:600;max-width:340px;margin:0 auto 14px">
-    FRIPS est né d'une blague d'apéro : "si les frites étaient des chips, on les mangerait au lit."
-    On a pris la blague au sérieux. Pomme de terre, forme frite, croustillant qui tient.
-    L'apéro devient une histoire qu'on raconte avant de l'ouvrir.
-  </p>
-</section>
+  <section>
+    <h2>Les goûts</h2>
+    <div class="grid">
+      <div class="card"><b>Original — Sel de mer</b><span>3,90 € / 150 g. Le classique.</span></div>
+      <div class="card"><b>Paprika</b><span>3,90 € / 150 g. Pour l'apéro qui a du caractère.</span></div>
+      <div class="card"><b>Fromage & oignon</b><span>4,20 € / 150 g. Le réconfort en frite.</span></div>
+    </div>
+  </section>
 
-<section class="wrap">
-  <h2>FAQ</h2>
-  <ul class="feat">
-    <li>Ça se garde combien de temps ? 6 mois ambient, fermé. Une fois ouvert, l'apéro finit avant.</li>
-    <li>C'est vraiment des frites ? Non — des chips pomme de terre en forme de frite. La blague est visuelle.</li>
-    <li>Combien ça coûte ? 3,90 € le sachet 150 g (Original/Paprika), 4,20 € Fromage & oignon.</li>
-    <li>Quand la livraison ? Précommande ouverte. Co-packé en Bretagne, premier lot expédié 6 semaines après l'ouverture du shop.</li>
-    <li>Sans gluten ? Non, pomme de terre oui mais trace possible — voir étiquette définitive.</li>
-  </ul>
-</section>
+  <section>
+    <h2>L'histoire</h2>
+    <p class="story">FRIPS est né d'une blague : <b>« si les frites étaient des chips, on les mangerait au lit ».</b> On a pris la blague au sérieux. Pomme de terre, forme frite, croustillant qui tient — l'apéro devient une histoire qu'on raconte avant de l'ouvrir.</p>
+  </section>
 
-<section id="commander" class="wrap buy">
-  <h2>Précommander</h2>
-  <p style="margin-bottom:14px">Inscris-toi, on t'envoie le lien dès le shop ouvert.</p>
-  <form action="https://formspree.io/f/myzwpqkz" method="POST" class="preco">
-    <input type="email" name="email" placeholder="ton@email.com" required aria-label="email">
-    <select name="gout" aria-label="gout">
-      <option value="Original">Original — Sel de mer</option>
-      <option value="Paprika">Paprika</option>
-      <option value="Fromage">Fromage & oignon</option>
-      <option value="Surprends-moi">Surprends-moi</option>
-    </select>
-    <button type="submit">🍟 Je veux mes FRIPS</button>
-  </form>
-  <p class="note">0€ maintenant — tu paies à la livraison. Pas de spam.</p>
-  <a href="https://instagram.com/frips.frites" target="_blank" rel="noopener" style="display:block;margin-top:14px;background:var(--gold);color:var(--ink);text-decoration:none;font-weight:800;padding:14px;border-radius:14px;text-align:center">📸 Suivre @frips.frites</a>
-</section>
+  <section>
+    <h2>FAQ</h2>
+    <div class="grid">
+      <div class="card"><b>Ça se garde combien de temps ?</b><span>6 mois ambient fermé. Ouvert, l'apéro finit avant.</span></div>
+      <div class="card"><b>C'est vraiment des frites ?</b><span>Non — des chips pomme de terre en forme de frite. La blague est visuelle.</span></div>
+      <div class="card"><b>Quand la livraison ?</b><span>Co-pack Bretagne, premier lot dans 6 sem. Précommande ouverte.</span></div>
+      <div class="card"><b>Sans gluten ?</b><span>Pomme de terre oui, mais trace possible — voir étiquette définitive.</span></div>
+    </div>
+  </section>
 
-<footer>
-  <p><strong>FRIPS</strong> — chips en forme de frite pour l'apéro.</p>
-  <p><a href="mailto:hello@frips-store.fr">hello@frips-store.fr</a> · <a href="https://instagram.com/frips.frites" target="_blank" rel="noopener">@frips.frites</a></p>
-  <p class="note">© 2026 FRIPS. Croustillant déposé.</p>
-<footer>
+  <section id="preco">
+    <h2>Précommander</h2>
+    <p class="lede" style="margin-bottom:14px">Inscris-toi, on t'envoie le lien dès le shop ouvert. 0 € maintenant.</p>
+    <form action="https://formspree.io/f/myzwpqkz" method="POST">
+      <input type="email" name="email" placeholder="ton@email.com" required aria-label="email">
+      <select name="gout" aria-label="gout">
+        <option value="Original">Original — Sel de mer</option>
+        <option value="Paprika">Paprika</option>
+        <option value="Fromage">Fromage & oignon</option>
+        <option value="Surprends-moi">Surprends-moi</option>
+      </select>
+      <button type="submit">🍟 Je veux mes FRIPS</button>
+    </form>
+    <p class="fine">Tu paies à la livraison. Pas de spam.</p>
+    <a class="ig" href="https://instagram.com/frips.frites" target="_blank" rel="noopener">📸 @frips.frites</a>
+  </section>
+</main>
+
+<footer><div class="wrap">
+  <p><b>FRIPS</b> — chips en forme de frite pour l'apéro.</p>
+  <p style="margin-top:6px"><a href="mailto:hello@frips-store.fr">hello@frips-store.fr</a> · <a href="https://instagram.com/frips.frites" target="_blank" rel="noopener">@frips.frites</a></p>
+  <p style="margin-top:8px">© 2026 FRIPS</p>
+</div></footer>
 </body>
 </html>
