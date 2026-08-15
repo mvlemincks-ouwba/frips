@@ -1,0 +1,14 @@
+{
+  "name": "frips-3d-videos",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "render": "remotion render src/index.tsx FripsVideo out/frips.mp4 --props='{\"flavor\":\"Original\"}'"
+  },
+  "dependencies": {
+    "remotion": "*",
+    "@remotion/cli": "*",
+    "react": "*",
+    "react-dom": "*"
+  }
+}

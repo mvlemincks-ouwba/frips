@@ -17,22 +17,9 @@
   .logo span{color:#fff;background:var(--ink);padding:0 6px;border-radius:6px}
   .tag{font-size:.8rem;font-weight:600;opacity:.8;margin-top:3px}
 
-  /* ---- 3D PACKS ---- */
-  .stage{perspective:900px;padding:34px 0 10px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-  .pack{width:120px;height:170px;position:relative;transform-style:preserve-3d;transition:transform .6s ease;cursor:pointer}
-  .pack:hover,.pack:active{transform:rotateY(180deg)}
-  .face{position:absolute;inset:0;border-radius:14px;backface-visibility:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 10px 24px rgba(0,0,0,.18);overflow:hidden}
-  .front{background:linear-gradient(155deg,var(--gold),var(--gold-d))}
-  .back{background:var(--ink);color:var(--cref);transform:rotateY(180deg)}
-  .back{color:var(--cream)}
-  /* fries drawn on the pack front */
-  .fries{display:flex;gap:5px;margin:10px 0}
-  .frie{width:11px;height:74px;border-radius:6px;background:#fff;box-shadow:inset -2px 0 0 #ffe27a}
-  .pack .name{font-weight:900;font-size:.95rem}
-  .pack .price{font-weight:800;font-size:1.05rem;margin-top:4px}
-  .pack .price small{font-size:.7rem;opacity:.7;font-weight:600}
-  .back .desc{font-size:.72rem;opacity:.85;text-align:center;padding:0 10px;line-height:1.35}
-  .back .name{color:var(--gold);font-weight:900;margin-bottom:6px}
+  /* ---- 3D VIDEOS ---- */
+  .stage{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;padding:20px 0 8px}
+  .packvid{width:140px;height:175px;border-radius:16px;box-shadow:0 10px 24px rgba(0,0,0,.18);background:#fff;object-fit:cover}
   .hint{text-align:center;font-size:.78rem;opacity:.55;margin-bottom:8px}
 
   h1{font-size:1.6rem;line-height:1.2;font-weight:900;text-align:center;padding:24px 0 6px}
@@ -60,9 +47,18 @@
 
 <section class="wrap" style="border-top:none">
   <h1>Des chips en forme de frite.<br>Le cliché de l'apéro, croquant.</h1>
-  <p class="sub">Tapote un paquet pour le retourner 👆</p>
-  <div class="stage" id="stage"></div>
-  <div class="hint">↻ tape pour voir le dos</div>
+  <p class="sub">Les paquets FRIPS en 3D animée 🍟</p>
+  <div class="stage" id="stage">
+    <video class="packvid" autoplay loop muted playsinline preload="metadata" poster="">
+      <source src="3d/out/original.mp4" type="video/mp4">
+    </video>
+    <video class="packvid" autoplay loop muted playsinline preload="metadata">
+      <source src="3d/out/paprika.mp4" type="video/mp4">
+    </video>
+    <video class="packvid" autoplay loop muted playsinline preload="metadata">
+      <source src="3d/out/fromage.mp4" type="video/mp4">
+    </video>
+  </div>
   <a class="cta" href="#commander">Je veux mes FRIPS</a>
 </section>
 
@@ -96,38 +92,6 @@
   <p><strong>FRIPS</strong> — chips en forme de frite pour l'apéro.</p>
   <p><a href="mailto:hello@frips.fr">hello@frips.fr</a> · <a href="https://instagram.com/frips.fr" target="_blank" rel="noopener">@frips.fr</a></p>
   <p class="note">© 2026 FRIPS. Croustillant déposé.</p>
-</footer>
-
-<script>
-// paquets 3D générés depuis les données produit (1 source, pas de HTML dupliqué)
-const PACKS=[
-  {name:"Original",price:"3,90",unit:"/150g",desc:"Sel de mer. Le classique, celui qui marche.",fries:5},
-  {name:"Paprika",price:"3,90",unit:"/150g",desc:"Pour l'apéro qui a du caractère.",fries:4},
-  {name:"Fromage",price:"4,20",unit:"/150g",desc:"Fromage & oignon. Le réconfort en frite.",fries:6}
-];
-const stage=document.getElementById("stage");
-PACKS.forEach(p=>{
-  const el=document.createElement("div");
-  el.className="pack";
-  const fries=Array.from({length:p.fries}).map(()=>'<div class="frie"></div>').join("");
-  el.innerHTML=`
-    <div class="face front">
-      <div class="fries">${fries}</div>
-      <div class="name">${p.name}</div>
-      <div class="price">${p.price}€ <small>${p.unit}</small></div>
-    </div>
-    <div class="face back">
-      <div class="name">${p.name}</div>
-      <div class="desc">${p.desc}</div>
-    </div>`;
-  // tap = retourne (mobile + desktop)
-  el.addEventListener("click",()=>el.classList.toggle("flipped"));
-  stage.appendChild(el);
-});
-// CSS pour la classe flipped (toggle au tap)
-const st=document.createElement("style");
-st.textContent=".pack.flipped{transform:rotateY(180deg)}";
-document.head.appendChild(st);
-</script>
+<footer>
 </body>
 </html>
