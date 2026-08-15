@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffc400">
+<title>FRIPS — Les chips en forme de frite pour l'apéro</title>
+<meta name="description" content="FRIPS : des chips croustillantes en forme de frite. L'apéro devient une blague qui croque.">
+<style>
+  :root{--gold:#ffc400;--gold-d:#e0a800;--ink:#1a1305;--cream:#fff8e6}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--cream);color:var(--ink);line-height:1.5;-webkit-text-size-adjust:100%}
+  .wrap{max-width:480px;margin:0 auto;padding:0 20px}
+  header{background:var(--gold);padding:28px 0 20px;text-align:center;position:sticky;top:0;z-index:10;box-shadow:0 2px 8px rgba(0,0,0,.12)}
+  .logo{font-size:2.1rem;font-weight:900;letter-spacing:.06em;color:var(--ink)}
+  .logo span{color:#fff;background:var(--ink);padding:0 6px;border-radius:6px}
+  .tag{font-size:.85rem;font-weight:600;opacity:.8;margin-top:4px}
+  .hero{padding:36px 0 24px;text-align:center}
+  .frite{display:block;margin:0 auto 16px;width:120px;height:auto}
+  h1{font-size:1.7rem;line-height:1.2;font-weight:900;margin-bottom:10px}
+  .sub{font-size:1.02rem;opacity:.85;max-width:340px;margin:0 auto}
+  .cta{display:inline-block;margin-top:22px;background:var(--ink);color:var(--gold);font-weight:800;padding:14px 28px;border-radius:999px;text-decoration:none;font-size:1.05rem;box-shadow:0 4px 0 var(--gold-d)}
+  .cta:active{transform:translateY(2px);box-shadow:0 2px 0 var(--gold-d)}
+  section{padding:30px 0;border-top:2px dashed rgba(0,0,0,.1)}
+  h2{font-size:1.35rem;font-weight:900;margin-bottom:14px;text-align:center}
+  .prod{background:#fff;border-radius:18px;padding:18px;box-shadow:0 6px 18px rgba(0,0,0,.08);text-align:center}
+  .prod .frite{width:90px;margin-bottom:10px}
+  .price{font-size:1.5rem;font-weight:900;color:var(--gold-d);margin:8px 0}
+  .price small{font-size:.8rem;font-weight:600;opacity:.7}
+  .feat{list-style:none;display:grid;gap:12px}
+  .feat li{background:#fff;border-radius:14px;padding:14px;font-weight:600;box-shadow:0 3px 10px rgba(0,0,0,.06);display:flex;align-items:center;gap:10px}
+  .feat li::before{content:"🍟";font-size:1.3rem}
+  .flavors{display:grid;gap:10px}
+  .flavors div{background:#fff;border-radius:12px;padding:12px 14px;font-weight:700}
+  .flavors small{display:block;font-weight:500;opacity:.7;font-size:.85rem}
+  .buy{text-align:center}
+  .buy a{display:block;background:var(--ink);color:var(--gold);text-decoration:none;font-weight:800;padding:16px;border-radius:14px;margin:10px 0;font-size:1.05rem}
+  footer{background:var(--ink);color:var(--cream);text-align:center;padding:24px 0;font-size:.85rem}
+  footer a{color:var(--gold)}
+  .note{font-size:.8rem;opacity:.6;text-align:center;margin-top:8px}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">FRIPS<span>🍟</span></div>
+  <div class="tag">L'apéro qui se mange debout</div>
+</header>
+
+<section class="hero wrap">
+  <svg class="frite" viewBox="0 0 64 120" aria-hidden="true">
+    <rect x="18" y="6" width="28" height="96" rx="14" fill="#ffc400" stroke="#e0a800" stroke-width="3"/>
+    <rect x="24" y="14" width="4" height="80" rx="2" fill="#ffe27a"/>
+    <rect x="34" y="14" width="4" height="80" rx="2" fill="#ffe27a"/>
+    <circle cx="32" cy="110" r="6" fill="#e0a800"/>
+  </svg>
+  <h1>Des chips en forme de frite.<br>Le cliché de l'apéro, croquant.</h1>
+  <p class="sub">FRIPS réinvente le paquet de chips : la frite qui n'a jamais existé, mais que tout le monde reconnaît. Parfait pour l'apéro qui dure.</p>
+  <a class="cta" href="#commander">Je veux mes FRIPS</a>
+</section>
+
+<section class="wrap">
+  <h2>Le produit</h2>
+  <div class="prod">
+    <svg class="frite" viewBox="0 0 64 120" aria-hidden="true">
+      <rect x="18" y="6" width="28" height="96" rx="14" fill="#ffc400" stroke="#e0a800" stroke-width="3"/>
+    </svg>
+    <p><strong>FRIPS Original</strong> — chips pomme de terre, forme frite, croustillant profond.</p>
+    <div class="price">3,90 € <small>/ sachet 150 g</small></div>
+    <p style="font-size:.9rem;opacity:.8">Sans colorant. Cuit au bon endroit, pas ailleurs.</p>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2>Pourquoi tu craques</h2>
+  <ul class="feat">
+    <li>Forme frite — le premier sachet qui fait rire avant de l'ouvrir</li>
+    <li>Croustillant qui tient — pas de miettes dans la moquette</li>
+    <li>150 g, dose apéro parfaite</li>
+    <li>Reconnaissable au premier regard</li>
+  </ul>
+</section>
+
+<section class="wrap">
+  <h2>Les goûts</h2>
+  <div class="flavors">
+    <div>Original Sel de mer <small>Le classique, celui qui marche</small></div>
+    <div>Paprika <small>Pour l'apéro qui a du caractère</small></div>
+    <div>Fromage & oignon <small>Le réconfort en forme de frite</small></div>
+  </div>
+</section>
+
+<section id="commander" class="wrap buy">
+  <h2>Commander</h2>
+  <p style="margin-bottom:12px">Dispo en précommande. On te tient au courant.</p>
+  <a href="mailto:hello@frips.fr?subject=Commande%20FRIPS">✉️ Précommander par mail</a>
+  <a href="https://instagram.com/frips.fr" target="_blank" rel="noopener">📸 Suivre sur Instagram</a>
+  <p class="note">Lancement prévu — inscris-toi, on t'envoie le lien dès le shop ouvert.</p>
+</section>
+
+<footer>
+  <p><strong>FRIPS</strong> — chips en forme de frite pour l'apéro.</p>
+  <p><a href="mailto:hello@frips.fr">hello@frips.fr</a> · <a href="https://instagram.com/frips.fr" target="_blank" rel="noopener">@frips.fr</a></p>
+  <p class="note">© 2026 FRIPS. Tous droits réservés. Croustillant déposé.</p>
+</footer>
+</body>
+</html>
