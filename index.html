@@ -6,6 +6,11 @@
 <meta name="theme-color" content="#ffc400">
 <title>FRIPS — Chips en forme de frite (3D)</title>
 <meta name="description" content="FRIPS : chips en forme de frite pour l'apéro. Paquets en 3D, 100% mobile.">
+<meta property="og:title" content="FRIPS — Les chips en forme de frite pour l'apéro">
+<meta property="og:description" content="Le cliché de l'apéro, croquant. Précommande ouverte.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mvlemincks-ecosystem.github.io/frips/">
+<meta name="twitter:card" content="summary_large_image">
 <style>
   :root{--gold:#ffc400;--gold-d:#e0a800;--ink:#1a1305;--cream:#fff8e6;--red:#e23b2e}
   *{box-sizing:border-box;margin:0;padding:0}
@@ -34,6 +39,10 @@
   .feat li::before{content:"🍟";font-size:1.3rem}
   .buy{text-align:center}
   .buy a{display:block;background:var(--ink);color:var(--gold);text-decoration:none;font-weight:800;padding:16px;border-radius:14px;margin:10px 0;font-size:1.02rem}
+  .preco{display:grid;gap:10px;margin-bottom:6px}
+  .preco input,.preco select{width:100%;padding:14px;border:2px solid var(--gold);border-radius:12px;font-size:1rem;font-family:inherit;background:#fff;color:var(--ink)}
+  .preco button{width:100%;padding:16px;border:none;border-radius:12px;background:var(--ink);color:var(--gold);font-weight:800;font-size:1.05rem;box-shadow:0 4px 0 var(--gold-d);cursor:pointer}
+  .preco button:active{transform:translateY(2px);box-shadow:0 2px 0 var(--gold-d)}
   footer{background:var(--ink);color:var(--cream);text-align:center;padding:24px 0;font-size:.85rem}
   footer a{color:var(--gold)}
   .note{font-size:.8rem;opacity:.6;text-align:center;margin-top:8px}
@@ -81,11 +90,20 @@
 </section>
 
 <section id="commander" class="wrap buy">
-  <h2>Commander</h2>
-  <p style="margin-bottom:12px">Dispo en précommande.</p>
-  <a href="mailto:hello@frips.fr?subject=Commande%20FRIPS">✉️ Précommander par mail</a>
-  <a href="https://instagram.com/frips.fr" target="_blank" rel="noopener">📸 Suivre sur Instagram</a>
-  <p class="note">Lancement prévu — inscris-toi, on t'envoie le lien dès le shop ouvert.</p>
+  <h2>Précommander</h2>
+  <p style="margin-bottom:14px">Inscris-toi, on t'envoie le lien dès le shop ouvert.</p>
+  <form action="https://formspree.io/f/myzwpqkz" method="POST" class="preco">
+    <input type="email" name="email" placeholder="ton@email.com" required aria-label="email">
+    <select name="gout" aria-label="gout">
+      <option value="Original">Original — Sel de mer</option>
+      <option value="Paprika">Paprika</option>
+      <option value="Fromage">Fromage & oignon</option>
+      <option value="Surprends-moi">Surprends-moi</option>
+    </select>
+    <button type="submit">🍟 Je veux mes FRIPS</button>
+  </form>
+  <p class="note">0€ maintenant — tu paies à la livraison. Pas de spam.</p>
+  <a href="https://instagram.com/frips.fr" target="_blank" rel="noopener" style="display:block;margin-top:14px;background:var(--gold);color:var(--ink);text-decoration:none;font-weight:800;padding:14px;border-radius:14px;text-align:center">📸 Suivre sur Instagram</a>
 </section>
 
 <footer>
