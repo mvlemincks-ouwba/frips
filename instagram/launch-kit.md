@@ -29,3 +29,10 @@ https://mvlemincks-ouwba.github.io/frips/ (section Précommander)
 ## À brancher (humain)
 - Email de contact : hello@frips-store.fr (à créer : forward vers ta boîte)
 - Compte vérifié plus tard (seuil 10k abonnés)
+
+## Post J0 — précommande (prêt à coller)
+> 🍟 Les chips en forme de frite sont là. L'apéro qui fait rire avant de l'ouvrir — pomme de terre, 150 g, 3,90 €.
+> Précommande ouverte, 0 € maintenant, lien en bio 👇
+> #frips #apero #snack #frites #chips #foodporn #frenchfood #startupfr
+
+Visuel : `3d/out/original.mp4`. À poster mar/jeu 18h30.
