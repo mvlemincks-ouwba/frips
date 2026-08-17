@@ -6,7 +6,7 @@ fournisseurs à contacter + une estimation coût/sachet.
 ## 1. Pomme de terre (matière)
 - Type fritable : Bintje ou Charlotte, calibre adapté à la découpe frite.
 - Source : coop bretonne (Cavac / Agriculteurs de Bretagne, 29-35) via le co-packer.
-- MOQ réaliste 1er lot : ~500 kg (= ~2 200 sachets de 220 g brut pour 150 g net).
+- MOQ réaliste 1er lot : ~1 100 kg (= ~5 000 sachets de 220 g brut pour 150 g net).
 - Prix indicatif pomme de terre en sac 25 kg : ~0,40 €/kg → ~0,15 €/sachet.
 
 ## 2. Packaging « forme frite » (LE vrai sujet)
