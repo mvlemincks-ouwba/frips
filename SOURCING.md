@@ -27,11 +27,12 @@ fournisseurs à contacter + une estimation coût/sachet.
 | Assaisonnement               | 0,05     |
 | Sachet forme frite (5k)      | 0,18     |
 | Co-packing Bretagne          | 0,35     |
-| Expédition précommande       | 0,60     |
-| **Total coût**               | **1,53** |
+| Expédition précommande       | 3,00     |  ← corrigé CFO : B2C point relais ≈ 2,99 € HT/sachet (Mondial Relay), pas 0,60
+| **Total coût**               | **3,93** |
 
-Vente : 3,90 € (Original/Paprika) → marge brute ≈ 2,37 € (≈ 61 %).
-Fromage & oignon 4,20 € → marge ≈ 2,67 €.
+Vente : 3,90 € (Original/Paprika) → marge brute ≈ **-0,03 €** (modèle sous l'eau si expé absorbée).
+Fromage & oignon 4,20 € → marge ≈ 0,27 €.
+→ Décision : facturer l'expé au client (+3,00 €) OU monter le prix avant de figer. Source : mondialrelay.fr (Point Relais colis <1 kg ≈ 2,99 € HT).
 
 ## 4. Délai
 - 1er lot ~6 sem après : (a) devis packaging validé + (b) réception sachets
