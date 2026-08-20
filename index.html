@@ -56,6 +56,9 @@
   .ig{display:block;margin-top:14px;text-align:center;font-weight:700;color:var(--ink);text-decoration:none}
   footer{padding:32px 0;border-top:1px solid var(--line);font-size:.82rem;color:var(--mut);text-align:center}
   footer a{color:var(--ink);text-decoration:none;font-weight:600}
+  /* sticky mobile CTA */
+  .sticky-cta{position:fixed;left:0;right:0;bottom:0;display:none;background:var(--ink);color:var(--paper);text-align:center;font-weight:700;padding:15px;text-decoration:none;font-size:1.02rem;z-index:50}
+  @media(max-width:560px){.sticky-cta{display:block} main{padding-bottom:60px}}
 </style>
 </head>
 <body>
@@ -99,6 +102,11 @@
   </section>
 
   <section>
+    <h2>Le pari FRIPS</h2>
+    <p class="story">On parie que ton apéro n'a jamais fait autant rire. <b>300 précommandes</b> et on lance le premier lot en Bretagne. Inscris-toi, tague le pote qui ouvre toujours le sachet : c'est lui qui va craquer. 🍟</p>
+  </section>
+
+  <section>
     <h2>FAQ</h2>
     <div class="grid">
       <div class="card"><b>Ça se garde combien de temps ?</b><span>6 mois ambient fermé. Ouvert, l'apéro finit avant.</span></div>
@@ -131,5 +139,6 @@
   <p style="margin-top:6px"><a href="mailto:hello@frips-store.fr">hello@frips-store.fr</a> · <a href="https://instagram.com/frips.frites" target="_blank" rel="noopener">@frips.frites</a></p>
   <p style="margin-top:8px">© 2026 FRIPS</p>
 </div></footer>
+<a class="sticky-cta" href="#preco" aria-label="Precommander FRIPS">🍟 Précommander — 3,90 €</a>
 </body>
 </html>

@@ -36,3 +36,11 @@ https://mvlemincks-ouwba.github.io/frips/ (section Précommander)
 > #frips #apero #snack #frites #chips #foodporn #frenchfood #startupfr
 
 Visuel : `3d/out/original.mp4`. À poster mar/jeu 18h30.
+
+## Post — « Le pari FRIPS » (prêt à coller)
+> 🍟 On a un pari pour toi.
+> Les chips en forme de frite existent en vrai — et on lance le 1er lot à 300 précommandes. Inscris-toi (0 € maintenant), tague le pote qui ouvre toujours l'apéro, et on te tient au courant. Lien en bio 👇
+> Sticker : SONDAGE « Tu craques pour quelle frite ? » → Original / Fromage & oignon
+> #frips #apero #chips #frites #snack #foodporn #frenchfood #startupfr #gourmand #lancement
+
+Visuel : Reel paquet qui tourne (`3d/out/original.mp4`).
